@@ -2,7 +2,7 @@
   <div class="tabbarItem" @click="handleTabbar">
     <div v-if="!isActived"><slot name="item-icon"></slot></div>
     <div v-else><slot name="item-icon-active"></slot></div>
-    <div :style="activedStyle"><slot name="item-text"></slot></div>
+    <div :style="{activedStyle}"><slot name="item-text"></slot></div>
   </div>
 </template>
 
